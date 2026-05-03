@@ -6,9 +6,11 @@ import { Plus, Trash2, Printer, User, Building, Calendar, FileText, CheckCircle2
 // HAPUS TANDA KOMENTAR (//) PADA BARIS IMPORT DI BAWAH INI AGAR DATABASE BERFUNGSI:
 // import { createClient } from '@supabase/supabase-js';
 
-// Masukkan URL dan KEY dari Supabase Anda di sini (Ganti teks di dalam tanda kutip).
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+// Hapus /rest/v1/ di belakangnya
+const supabaseUrl = 'https://atltvczwtnzptwguqznm.supabase.co';
+
+// Key Anda sudah benar
+const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF0bHR2Y3p3dG56cHR3Z3Vxem5tIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc4MDk1NjEsImV4cCI6MjA5MzM4NTU2MX0.mSF-NcpzAsy0rlES0_7UpAZTi4tyoO4JHapPobxsGEs';
 
 let supabase = null;
 try {
